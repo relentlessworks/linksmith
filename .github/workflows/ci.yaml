@@ -10,7 +10,6 @@ on:
       - 'docs/**'
       - '*.md'
       - 'LICENSE'
-      - '.github/**'
   pull_request:
     branches:
       - main
@@ -34,7 +33,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: go.mod
+          go-version: "1.24.x"
 
       - name: Vet
         run: go vet ./...
@@ -79,7 +78,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: go.mod
+          go-version: "1.24.x"
 
       - name: Cross-compile
         env:
