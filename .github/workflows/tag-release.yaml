@@ -31,7 +31,7 @@ jobs:
           else
             VERSION="0.0.0"
           fi
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
           echo "Version: $VERSION"
 
       - name: Check if tag exists
