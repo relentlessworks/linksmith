@@ -1,0 +1,4 @@
+/linksmith
+linksmith.json
+*.exe
+dist/
